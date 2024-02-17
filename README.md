@@ -1,6 +1,3 @@
-Certainly! Here's a revised version of the README.md file:
-
-```markdown
 # Testvalley Website Clone
 
 This project is a clone of the Testvalley Website, developed using React. The aim is to recreate the main features and layout of the original website.
@@ -47,10 +44,3 @@ To run this project locally, follow these steps:
 - **React**: JavaScript library for building user interfaces.
 - **JSON**: Data format used for storing content data.
 - **CSS**: Styling language for designing the website layout and appearance.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-```
-
-This version provides clearer instructions on how to run the project locally and highlights the key features of the Testvalley Website Clone. Additionally, it includes a more structured overview of the project and technologies used.
