@@ -10,3 +10,13 @@
     gap: 2em;
     width: 60em;
 }
+
+@media(max-width: 1000px){
+    .main-shortcuts-container {
+        justify-content: center;
+    }
+
+    .main-shortcuts {
+        flex-wrap: wrap;
+    }
+}

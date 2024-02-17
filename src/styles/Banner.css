@@ -6,3 +6,10 @@
 .banner-container img {
     width: 60em;
 }
+
+@media(max-width: 1000px){
+    .banner-container img {
+        height: 12em;
+        width: 28em;
+    }
+}

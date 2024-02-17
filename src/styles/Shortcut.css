@@ -1,5 +1,5 @@
 .shortcut-container img {
-    width: 60px;
+    width: 4em;
 }
 
 .shortcut-container p {
@@ -9,4 +9,14 @@
 
 .shortcut-container:hover {
     cursor: pointer;
+}
+
+@media(max-width: 1000px){
+    .shortcut-container img {
+        width: 3em;
+    }
+
+    .shortcut-container p {
+        font-size: 10px;
+    }
 }

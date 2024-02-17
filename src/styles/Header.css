@@ -44,3 +44,22 @@
 .header .right-header {
     justify-self: flex-end
 }
+
+@media(max-width: 1000px){
+    .header-container {
+        height: 3em;
+    }
+
+    .header .left-header p {
+        font-size: 24px;
+    }
+
+    .header .left-header .menu-bar, .search  {
+        display: none;
+    }
+
+    .header .right-header .icons  {
+        display: flex;
+        gap: 1em;
+    }
+}

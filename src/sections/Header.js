@@ -1,15 +1,29 @@
-import '../styles/Header.css'
+import React, { useState, useEffect } from 'react';
+import '../styles/Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
-
+import { faSearch, faBell } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
-    return(
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    return (
         <div className="header-container">
             <div className="header">
                 <div className="left-header">
                     <p>Testvalley</p>
-                    <div className="menu-bar">
+                    <div className="menu-bar"> 
                         <p>=카테고리</p>
                     </div>
                 </div>
@@ -20,12 +34,18 @@ function Header() {
                     </div>
                 </div>
                 <div className="right-header">
-                    <p>로그인 / 회원가입</p>
+                {windowWidth < 1000 && (
+                            <div className='icons'>
+                                <FontAwesomeIcon icon={faSearch} color='gray'/>
+                                <FontAwesomeIcon icon={faBell} color='gray'/>
+                            </div>
+                        )}
+                        {windowWidth >= 1000 && <p>로그인 / 회원가입</p>}
+                    
                 </div>
-
             </div>
         </div>
-    )
+    );
 }
 
 export default Header;

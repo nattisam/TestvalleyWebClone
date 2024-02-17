@@ -7,3 +7,6 @@
 .main-collections {
     width: 60em;
 }
+
+@media(max-width: 1000px){
+}

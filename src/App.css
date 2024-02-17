@@ -2,3 +2,16 @@
     justify-content: center;
     overflow-x: hidden;
 }
+
+@media(max-width: 1000px){
+    .app-container {
+        display: flex;
+        justify-content: center;
+        background-color: antiquewhite;
+    }
+
+    .app {
+        width: 28em;
+        background-color: #fff;
+    }
+}

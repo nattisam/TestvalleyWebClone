@@ -60,3 +60,28 @@
   display: inline;
   color: red;
 }
+
+@media(max-width: 1000px){
+  .collection {
+    all: unset;
+  }
+
+  .left-collection {
+    all: unset;
+  }
+  .left-collection p {
+    font-size: 18px;
+    padding: 0 1.5em;
+  }
+
+
+  .right-collection {
+    all: unset;
+  }
+
+  .right-collection .static-collection {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 2em;
+  }
+}
