@@ -1,0 +1,12 @@
+.main-shortcuts-container {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.main-shortcuts {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    width: 60em;
+}

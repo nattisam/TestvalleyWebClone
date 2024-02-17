@@ -1,0 +1,8 @@
+.banner-container {
+    display: flex;
+    justify-content: center;
+}
+
+.banner-container img {
+    width: 60em;
+}

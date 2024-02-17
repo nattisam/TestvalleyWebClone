@@ -1,0 +1,12 @@
+.shortcut-container img {
+    width: 60px;
+}
+
+.shortcut-container p {
+    text-align: center;
+    font-size: 14px;
+}
+
+.shortcut-container:hover {
+    cursor: pointer;
+}
