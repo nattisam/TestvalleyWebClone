@@ -10,6 +10,8 @@ function MainCollections() {
 const filteredData = mainCollectoins.items.filter(item => {
   return item.type === "SINGLE" && item.viewType === "TILE";
 });
+
+const rand = Math.random() * (3000);
   
   return (
     <div className='main-collections-container'>
@@ -19,6 +21,7 @@ const filteredData = mainCollectoins.items.filter(item => {
             key={item.id}
             title={item.title}
             items={item.items}
+            autoplay={rand}
           />
         ))}
       </div>
