@@ -50,6 +50,10 @@
         height: 3em;
     }
 
+    .header {
+        padding: 0 1em;
+    }
+
     .header .left-header p {
         font-size: 24px;
     }
